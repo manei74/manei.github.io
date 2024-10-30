@@ -1,2 +1,3 @@
 Some text for header
-changes for master
+changes for master - new changes!
+
