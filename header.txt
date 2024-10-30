@@ -1,3 +1,5 @@
 Some text for header
-changes for master - new changes!
+changes for master
+changes for first branch
 
+TEXT  - new changes!
