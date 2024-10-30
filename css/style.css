@@ -1,0 +1,114 @@
+/*  Peremennie */
+:root {
+  --color-green: #76bc21;
+  --background-black-opacity: rgb(0, 0, 0, .9);
+}
+
+/* General styles */
+a {
+  color: var(--color-green);
+  text-decoration: none;
+  transition: opacity 0.25s ease;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+/* Header */
+
+.header {
+  position: relative;
+  height: 110vh;
+  background: url("../images/serene.webp") no-repeat center;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 89%, 75% 100%, 25% 100%, 0 88%);
+  /* filter: brightness(0.5); */
+}
+
+.header__background {
+  position: absolute;
+  height: inherit;
+  width: 100%
+  object-fit: cover;
+  filter: blur(1px) opacity(.4) saturate(200%);
+}
+
+.header__background-wrapper {
+  position: absolute;
+  height: inherit;
+  width: 100%;
+
+  /* background: rgb(0, 0, 0, .1); */
+
+  z-index: 1;
+}
+
+.header-top {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 70px;
+
+  background: rgb(0, 0, 0, 50%);
+  color: #fff;
+
+  z-index: 3;
+}
+
+.header-top a {
+  color: #fff;
+}
+
+.header-top a.active {
+  color: var(--color-green);
+}
+
+.logo {
+  font-size: 40px;
+  color: #fff;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-element {
+  margin-right: 10px;
+  font-size: 21px;
+}
+
+.menu-element:last-child {
+  margin-right: 0;
+}
+
+.header-center {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px);
+
+  z-index: 2;
+}
+
+.header-center__wrapper {
+  width: 100%;
+  padding: 20px 0 10px;
+
+  background: var(--background-black-opacity);
+  text-align: center;
+}
+
+.name {
+  font-size: 58px;
+  line-height: 74px;
+}
+
+.description {
+  font-size: 38px;
+}
